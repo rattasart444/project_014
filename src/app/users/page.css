@@ -1,0 +1,539 @@
+/* =========================================
+   LUNAR WATCH - MEMBERS
+========================================= */
+
+.lunar-users-page {
+  min-height: 100vh;
+  background: #171512;
+  color: #f5f1e8;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.users-hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      rgba(20, 18, 15, 0.45),
+      rgba(20, 18, 15, 0.88)
+    ),
+    url("https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=2400&q=85")
+    center / cover;
+
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at center,
+      transparent 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-label {
+  margin-bottom: 18px;
+
+  font-size: 11px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  color: rgba(245, 241, 232, 0.7);
+}
+
+.hero-title {
+  margin: 0;
+
+  font-family: Georgia, serif;
+  font-size: clamp(48px, 8vw, 90px);
+  font-weight: 400;
+  line-height: 1;
+
+  color: #f8f3e8;
+}
+
+.hero-description {
+  max-width: 550px;
+  margin: 25px auto 0;
+
+  color: rgba(245, 241, 232, 0.75);
+  line-height: 1.8;
+}
+
+/* =========================================
+   MEMBERS SECTION
+========================================= */
+
+.members-section {
+  position: relative;
+  padding: 100px 24px;
+
+  background:
+    linear-gradient(
+      rgba(28, 25, 22, 0.94),
+      rgba(28, 25, 22, 0.98)
+    );
+}
+
+.members-container {
+  width: min(1200px, 100%);
+  margin: auto;
+}
+
+/* =========================================
+   HEADING
+========================================= */
+
+.members-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 30px;
+  margin-bottom: 45px;
+}
+
+.section-label {
+  margin-bottom: 12px;
+
+  color: #b8a989;
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin: 0;
+
+  font-family: Georgia, serif;
+  font-size: clamp(35px, 5vw, 58px);
+  font-weight: 400;
+
+  color: #f5f1e8;
+}
+
+.section-description {
+  margin-top: 12px;
+
+  color: rgba(245, 241, 232, 0.55);
+}
+
+.total-members {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  min-width: 170px;
+  padding: 17px 20px;
+
+  border: 1px solid rgba(245, 241, 232, 0.12);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.total-members svg {
+  color: #c5b28b;
+}
+
+.total-members span {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #999083;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.total-members strong {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+/* =========================================
+   TABLE
+========================================= */
+
+.members-table-wrapper {
+  overflow-x: auto;
+
+  border: 1px solid rgba(245, 241, 232, 0.1);
+
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.members-table {
+  width: 100%;
+  min-width: 800px;
+
+  border-collapse: collapse;
+}
+
+.members-table th {
+  padding: 20px;
+
+  text-align: left;
+
+  color: #968e80;
+
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 3px;
+
+  border-bottom: 1px solid rgba(245, 241, 232, 0.1);
+}
+
+.members-table td {
+  padding: 20px;
+
+  color: #ded9cf;
+
+  border-bottom: 1px solid rgba(245, 241, 232, 0.07);
+}
+
+.members-table tbody tr {
+  transition: background 0.3s ease;
+}
+
+.members-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.members-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.user-number {
+  color: #766f63;
+
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.name-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-weight: 500;
+}
+
+.user-icon,
+.card-avatar {
+  display: grid;
+  place-items: center;
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  color: #28241e;
+
+  background: #d7c7a4;
+
+  font-family: Georgia, serif;
+}
+
+.username-tag {
+  display: inline-block;
+
+  padding: 7px 11px;
+
+  color: #c9b991;
+
+  font-size: 12px;
+
+  border: 1px solid rgba(201, 185, 145, 0.2);
+  background: rgba(201, 185, 145, 0.05);
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-button,
+.delete-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 9px 13px;
+
+  border: none;
+  cursor: pointer;
+
+  font-size: 12px;
+
+  transition: all 0.25s ease;
+}
+
+.edit-button {
+  color: #ded3bc;
+
+  border: 1px solid rgba(215, 199, 164, 0.2);
+
+  background: rgba(215, 199, 164, 0.07);
+}
+
+.edit-button:hover {
+  color: #29251e;
+  background: #d7c7a4;
+}
+
+.delete-button {
+  color: #c99b9b;
+
+  border: 1px solid rgba(190, 100, 100, 0.15);
+
+  background: rgba(190, 100, 100, 0.06);
+}
+
+.delete-button:hover {
+  color: white;
+  background: #9f3f3f;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+.mobile-member-list {
+  display: none;
+}
+
+/* =========================================
+   CTA
+========================================= */
+
+.users-cta {
+  position: relative;
+
+  padding: 120px 24px;
+
+  text-align: center;
+
+  background: #100f0d;
+}
+
+.cta-content {
+  max-width: 750px;
+  margin: auto;
+}
+
+.cta-title {
+  margin: 0 0 20px;
+
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 6vw, 65px);
+  font-weight: 400;
+
+  color: #f5f1e8;
+}
+
+.cta-content > p:last-child {
+  color: rgba(245, 241, 232, 0.55);
+}
+
+/* =========================================
+   LOADING
+========================================= */
+
+.users-loading,
+.users-message {
+  min-height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.users-loading p,
+.users-message p {
+  color: #999083;
+}
+
+.loading-circle {
+  width: 45px;
+  height: 45px;
+
+  margin-bottom: 20px;
+
+  border: 2px solid rgba(215, 199, 164, 0.15);
+  border-top-color: #d7c7a4;
+
+  border-radius: 50%;
+
+  animation: lunar-spin 1s linear infinite;
+}
+
+@keyframes lunar-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.retry-button {
+  margin-top: 15px;
+
+  padding: 11px 25px;
+
+  color: #29251e;
+
+  border: none;
+
+  background: #d7c7a4;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.retry-button:hover {
+  background: #eee0bd;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .users-hero {
+    min-height: 50vh;
+  }
+
+  .members-section {
+    padding: 70px 16px;
+  }
+
+  .members-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .total-members {
+    width: 100%;
+  }
+
+  .members-table-wrapper {
+    display: none;
+  }
+
+  .mobile-member-list {
+    display: block;
+  }
+
+  .member-card {
+    padding: 18px;
+
+    border: 1px solid rgba(245, 241, 232, 0.1);
+
+    background: rgba(255, 255, 255, 0.035);
+  }
+
+  .member-card-top {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+  }
+
+  .card-number {
+    color: #766f63;
+
+    font-size: 11px;
+  }
+
+  .card-avatar {
+    flex-shrink: 0;
+
+    width: 45px;
+    height: 45px;
+  }
+
+  .card-user-info {
+    min-width: 0;
+  }
+
+  .card-user-info h3 {
+    margin: 0 0 4px;
+
+    color: #f5f1e8;
+
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .card-user-info span {
+    color: #8e887d;
+
+    font-size: 12px;
+  }
+
+  .card-actions {
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 18px;
+  }
+
+  .card-actions button {
+    flex: 1;
+  }
+
+  .users-cta {
+    padding: 90px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero-label {
+    font-size: 9px;
+    letter-spacing: 3px;
+  }
+
+  .section-title {
+    font-size: 38px;
+  }
+
+  .member-card {
+    padding: 15px;
+  }
+
+}
